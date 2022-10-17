@@ -1,0 +1,168 @@
+@media screen and (max-width:1440px) {
+    body {
+        background-color: hsl(225, 100%, 94%);
+        background-image: url("images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-family: RedHatDisplay-Medium;
+    }
+
+    #container {
+        width: 450px;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    #container img {
+        border-radius: 20px 20px 0 0;
+    }
+
+    #contents {
+        padding: 30px;
+        text-align: center;
+    }
+
+    #contents h3 {
+        font-family: RedHatDisplay-Black;
+    }
+
+    #contents * {
+        margin-bottom: 20px;
+    }
+
+    #description {
+        /*font-size: 12pt;*/
+        color: hsl(224, 23%, 55%);
+        margin: 30px 2vw;
+        line-height: 25px;
+    }
+
+    #plan {
+        display: grid;
+        grid-template-columns: 50px auto auto;
+        align-items: center;
+        padding: 20px;
+        /*font-size: 12pt; */
+        background-color: hsl(225, 100%, 98%);
+        border-radius: 10px;
+    }
+
+    #plan * {
+        margin: 0;
+    }
+
+    #plan_title {
+        margin-bottom: 5px;
+    }
+
+    #plan img {
+        width: 50px;
+        margin-right: 0;
+    }
+
+    /*
+    #plan_title {
+        font-size: 13pt;
+    }
+    */
+
+    #plan_price, #cancel {
+        color: hsl(224, 23%, 55%);
+    }
+
+    #plan_change {
+        text-align: right;
+        font-weight: bold;
+        color: hsl(245, 75%, 52%);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    #plan_change:active {
+        color: hsl(224, 23%, 55%);
+    }
+
+    #proceed_btn {
+        width: 100%;
+        border: none;
+        font-family: RedHatDisplay-Bold;
+        /*font-size: 11pt;*/
+        padding: 15px;
+        border-radius: 10px;
+        background-color: hsl(245, 75%, 52%);
+        color: white;
+        box-shadow: 0px 20px 10px hsla(245, 75%, 52%, 0.1);
+        cursor: pointer;
+    }
+
+    #proceed_btn:active {
+        background-color: hsl(245, 78%, 65%);
+    }
+
+    #cancel {
+        /*font-size: 11pt;*/
+        font-family: RedHatDisplay-Bold;
+        cursor: pointer;
+    }
+
+    #cancel:active {
+        color: hsl(223, 47%, 23%);
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+        padding: 10px;
+    }
+
+    #container {
+        width: 95%;
+    }
+
+    #container img {
+        width: 100%;
+    }
+
+    #description {
+        margin: 20px 0.5vh;
+    }
+
+    #contents {
+        padding: 20px;
+    }
+
+    /*
+    #plan {
+        font-size: 10pt;
+    }
+    */
+
+    #plan_title {
+        margin-bottom: 3px;
+    }
+
+    #plan img {
+        width: 50px;
+    }
+}
+
+@font-face {
+    font-family: RedHatDisplay-Medium;
+    src: url("fonts/RedHatDisplay-Medium.woff");
+}
+
+@font-face {
+    font-family: RedHatDisplay-Bold;
+    src: url("fonts/RedHatDisplay-Bold.woff");
+}
+
+@font-face {
+    font-family: RedHatDisplay-Black;
+    src: url("fonts/RedHatDisplay-Black.woff");
+}
